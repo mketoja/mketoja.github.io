@@ -4,7 +4,7 @@ let markersAdded = false;
 let const initial_lat, initial_lon;
 let markers = [];
 
-window.onload = () {
+window.onload = (event) => {
   
   if (navigator.geolocation) {
     navigator.geolocation.watchPosition(success, error);
