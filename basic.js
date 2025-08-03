@@ -1,5 +1,5 @@
 window.onload = () => {
-    let testEntityAdded = false;
+    let markersAdded = false;
 
     const el = document.querySelector("[gps-new-camera]");
 
