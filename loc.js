@@ -1,12 +1,9 @@
-window.onload = (event) => {
-
+function geolocation() {
 const x = document.getElementById("demo");
 let const initial_lat, initial_lon;
 let markers = [];
 
-
-  
-  if (navigator.geolocation) {
+if (navigator.geolocation) {
     navigator.geolocation.watchPosition(success, error);
   } else {
     x.innerHTML = "Geolocation is not supported by this browser.";
