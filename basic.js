@@ -39,7 +39,7 @@ window.onload = () => {
             const initial_lon = e.detail.position.longitude; 
             alert(`Got first GPS position: lon ${initial_lon} lat ${initial_lat}`);
             // Add a box to the north of the initial GPS position
-        const markers = createMarkers(initial_lat, initial_lon);
+        var markers = createMarkers(initial_lat, initial_lon);
         alert('Markers created!');
         alert markers;
             
