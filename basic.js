@@ -15,8 +15,8 @@ window.onload = () => {
             const initial_lon = e.detail.position.longitude; 
             alert(`Got first GPS position: lon ${initial_lon} lat ${initial_lat}`);
             // create markers
-            var markers =  createMarkers(initial_lat, initial_lon);
-            alert('Markers added')
+            var markers = createMarkers(initial_lat, initial_lon);
+            alert('Markers added');
             markersAdded = true;
         }
 
