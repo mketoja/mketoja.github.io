@@ -25,14 +25,10 @@ window.onload = () => {
         } 
 
     function calculate_distances(lat, lon, markers) {
-        for (let i = 0; i < markers.length; i++) {
+        length = markers.length;
+        for (let i = 0; i < length; i++) {
             Alert('Calculating marker distance');
-            marker = markers[i];
-            distance = distance(lat, lon, marker.lat, marker.lon);
-            if (distance == 0) {
-                alert('Found marker!' + marker.name);
-                }
-            }
+            }            }
             return;
         }
 
