@@ -1,11 +1,10 @@
-<script>
+window.onload = (event) => {
+
 const x = document.getElementById("demo");
-let markersAdded = false;
 let const initial_lat, initial_lon;
 let markers = [];
 
-const x = document.getElementById("demo");
-window.onload = (event) => {
+
   
   if (navigator.geolocation) {
     navigator.geolocation.watchPosition(success, error);
@@ -52,4 +51,4 @@ function error(error) {
       break;
   }
 }
-</script> 
+
