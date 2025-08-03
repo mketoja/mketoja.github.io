@@ -47,8 +47,11 @@ window.onload = () => {
             // create markers
             markers = createMarkers(initial_lat, initial_lon);
             markersAdded = true;
+            return;
             }
-        calculate_distances(e.detail.position.latitude, e.detail.position.longitude, markers);
+            current_lat = e.detail.position.latitude;
+            current_lon = e.detail.position.longitude;
+            calculate_distances(current_lat, current_lon, markers);
 
     });
 };
