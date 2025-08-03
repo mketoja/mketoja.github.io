@@ -1,9 +1,12 @@
 window.onload = () => {
     let markersAdded = false;
 
-    function createMarkers(beginning_lat, beginning_lon) { 
+    function createMarkers(initial_lat, initial_lon) { 
                 alert('Marker function start');
-                const markers = 1;
+                const markers = [{lat: initial_lat + 0.001,
+                                  lon: initial_lon }, 
+                                  {lat: initial_lat,
+                                  lon: initial_lon + 0.001 }];
                 return markers;
             }    
 
@@ -18,6 +21,7 @@ window.onload = () => {
             markers = createMarkers(initial_lat, initial_lon);
             alert('Markers added');
             markersAdded = true;
+            alert markers;
         }
 
     });
