@@ -15,11 +15,7 @@ window.onload = () => {
             const initial_lon = e.detail.position.longitude; 
             alert(`Got first GPS position: lon lat`);
             // Add a box to the north of the initial GPS position
-        var markers = createMarkers(initial_lat, initial_lon);
-        alert('Markers created!');
-        markersAdded = true;
-        alert markers;
-            
+             
         }
 
     });
