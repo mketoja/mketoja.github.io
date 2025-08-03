@@ -3,7 +3,7 @@ window.onload = () => {
 
     const el = document.querySelector("[gps-new-camera]");
 
-    function createmarkers(beginning_lat, beginning_lon) { 
+    function createMarkers(beginning_lat, beginning_lon) { 
                 const markers = [
                     {lat: beginning_lat + 0.001,
                      long: beginning_long,
@@ -36,7 +36,8 @@ window.onload = () => {
         if(!markersAdded) {
             alert(`Got first GPS position: lon ${e.detail.position.longitude} lat ${e.detail.position.latitude}`);
             // Add a box to the north of the initial GPS position
-        const markers = createmarkers(${e.detail.position.latitude}, ${e.detail.position.longitude});
+        const markers = createMarkers(${e.detail.position.latitude}, ${e.detail.position.longitude});
+        alert('Markers created!' + markers)
             
 
 const entity = document.createElement("a-box");
