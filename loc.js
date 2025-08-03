@@ -4,6 +4,7 @@ let markersAdded = false;
 let const initial_lat, initial_lon;
 let markers = [];
 
+const x = document.getElementById("demo");
 window.onload = (event) => {
   
   if (navigator.geolocation) {
