@@ -1,5 +1,7 @@
-function geolocation() {
 const x = document.getElementById("demo");
+
+function geolocation() {
+x.innerHTML = "test";
 let const initial_lat, initial_lon;
 let markers = [];
 
