@@ -47,9 +47,8 @@ window.onload = () => {
             // create markers
             markers = createMarkers(initial_lat, initial_lon);
             markersAdded = true;
-            calculate_distances(e.detail.position.latitude, e.detail.position.longitude,markers);
-
-        }
+            }
+        calculate_distances(e.detail.position.latitude, e.detail.position.longitude, markers);
 
     });
 };
