@@ -7,7 +7,7 @@ window.onload = () => {
         if(!markersAdded) {
             const initial_lat = e.detail.position.latitude;
             const initial_lon = e.detail.position.longitude; 
-            alert(`Got first GPS position: lon lat`);
+            alert(`Got first GPS position: lon ${initial_lon} lat ${initial_lat}`);
             // Add a box to the north of the initial GPS position
            const entity = document.createElement("a-box");
             entity.setAttribute("scale", {
