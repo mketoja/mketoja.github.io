@@ -34,10 +34,13 @@ window.onload = () => {
 
     el.addEventListener("gps-camera-update-position", e => {
         if(!markersAdded) {
-            alert(`Got first GPS position: lon ${e.detail.position.longitude} lat ${e.detail.position.latitude}`);
+            const initial_lat = e.detail.position.latitude;
+            const initial_lon = e.detail.position.longitude; 
+            alert(`Got first GPS position: lon ${initial_lon} lat ${initial_lat}`);
             // Add a box to the north of the initial GPS position
-        const markers = createMarkers(${e.detail.position.latitude}, ${e.detail.position.longitude});
-        alert('Markers created!' + markers)
+        const markers = createMarkers(initial_lat, initial_lon);
+        alert('Markers created!');
+        alert markers;
             
 
 const entity = document.createElement("a-box");
