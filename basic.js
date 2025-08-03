@@ -37,8 +37,7 @@ window.onload = () => {
             }
           current_lat = e.detail.position.latitude;
           current_lon = e.detail.position.longitude;
-          distance = distance(current_lat, current_lon, initial_lat, initial_lon);
-          alert(distance);
+          alert(current_lat);
     });
 };
 
