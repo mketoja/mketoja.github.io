@@ -2,7 +2,7 @@ window.onload = () => {
     let markersAdded = false;
 
     function createMarkers(initial_lat, initial_lon) { 
-                const markers = [{name: a,
+                markers = [{name: a,
                                   lat: initial_lat + 0.001,
                                   lon: initial_lon },
  
@@ -24,16 +24,7 @@ window.onload = () => {
         return 2 * r * Math.asin(Math.sqrt(a));
         } 
 
-    function calculate_distances(lon, lat, markers) {
-        for (let i = 0; i < markers.length; i++) {
-            Alert('Calculating marker distance');
-            marker = markers[i];
-            distance = distance(lat, lon, marker.lat, marker.lon);
-            if (distance == 0) {
-                alert('Found marker!' + marker.name);
-            }
-            return;
-        }
+
 
     const el = document.querySelector("[gps-new-camera]");
 
