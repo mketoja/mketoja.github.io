@@ -4,6 +4,7 @@ window.onload = () => {
     const el = document.querySelector("[gps-new-camera]");
 
     function createMarkers(beginning_lat, beginning_lon) { 
+                alert('Marker function start');
                 const markers = [
                     {lat: beginning_lat + 0.001,
                      long: beginning_long,
