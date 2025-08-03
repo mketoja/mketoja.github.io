@@ -2,13 +2,13 @@ window.onload = () => {
     let markersAdded = false;
 
     function createMarkers(initial_lat, initial_lon) { 
-                markers = [{name: a,
-                                  lat: initial_lat + 0.001,
-                                  lon: initial_lon },
+                markers = [{      name: a,
+                                  lat: 1,
+                                  lon: 2 },
  
                                   {name: b, 
-                                  lat: initial_lat,
-                                  lon: initial_lon + 0.001 }];
+                                  lat: 1,
+                                  lon: 2 }];
                 alert('Markers added');
                 return markers;
             }   
