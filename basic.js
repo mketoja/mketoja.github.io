@@ -24,17 +24,7 @@ window.onload = () => {
         return 2 * r * Math.asin(Math.sqrt(a));
         } 
 
-    function calculate_distances(lat, lon, markers) {
-        length = markers.length;
-        for (let i = 0; i < length; i++) {
-            Alert('Calculating marker distance');
-            }            }
-            return;
-        }
-
-
-
-    const el = document.querySelector("[gps-new-camera]");
+     const el = document.querySelector("[gps-new-camera]");
 
     el.addEventListener("gps-camera-update-position", e => {
         if(!markersAdded) {
@@ -48,8 +38,8 @@ window.onload = () => {
             }
             current_lat = e.detail.position.latitude;
             current_lon = e.detail.position.longitude;
-            calculate_distances(current_lat, current_lon, markers);
-
+            distance = distance(current_lat, current_lon, initial_lat, initial_lon);
+            alert(distance);
     });
 };
 
