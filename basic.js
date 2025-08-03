@@ -34,12 +34,11 @@ window.onload = () => {
             // create markers
             markers = createMarkers(initial_lat, initial_lon);
             markersAdded = true;
-            return;
             }
-            current_lat = e.detail.position.latitude;
-            current_lon = e.detail.position.longitude;
-            distance = distance(current_lat, current_lon, initial_lat, initial_lon);
-            alert(distance);
+          current_lat = e.detail.position.latitude;
+          current_lon = e.detail.position.longitude;
+          distance = distance(current_lat, current_lon, initial_lat, initial_lon);
+          alert(distance);
     });
 };
 
