@@ -30,17 +30,18 @@ window.onload = () => {
         }
 
     function calculate_distances(lon, lat, markers) {
-
+            return;
         }
 
     el.addEventListener("gps-camera-update-position", e => {
         if(!markersAdded) {
-            const initial_lat = e.detail.position.latitude;
-            const initial_lon = e.detail.position.longitude; 
-            alert(`Got first GPS position: lon ${initial_lon} lat ${initial_lat}`);
+            const initial_lat = ${e.detail.position.latitude};
+            const initial_lon = ${e.detail.position.longitude}; 
+            alert(`Got first GPS position: lon lat`);
             // Add a box to the north of the initial GPS position
-        var markers = createMarkers(initial_lat, initial_lon);
+        const markers = createMarkers(initial_lat, initial_lon);
         alert('Markers created!');
+        markersAdded = true;
         alert markers;
             
 
@@ -57,7 +58,7 @@ const entity = document.createElement("a-box");
             });
             document.querySelector("a-scene").appendChild(entity);
         }
-        markersAdded = true;
+
     });
 };
 
