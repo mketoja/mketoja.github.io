@@ -31,6 +31,7 @@ window.onload = () => {
             distance = distance(lat, lon, marker.lat, marker.lon);
             if (distance == 0) {
                 alert('Found marker!' + marker.name);
+                }
             }
             return;
         }
