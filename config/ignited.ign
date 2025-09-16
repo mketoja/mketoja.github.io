@@ -40,7 +40,7 @@
         "path": "/etc/vconsole.conf",
         "contents": {
           "compression": "",
-          "source": "data:,KEYMAP%3Dfis"
+          "source": "data:,KEYMAP%3Dfi"
         },
         "mode": 420
       }
