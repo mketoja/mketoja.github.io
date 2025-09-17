@@ -11,7 +11,7 @@
           "adm"
         ],
         "name": "core",
-        "passwordHash": "$y$j9T$7WXKtGjsMh9ngYFBppdzrG.$pXa.qv4ninBJ10VVpjxhS1bZcleEe8H5/fg7g0MtnP2",
+        "passwordHash": "$y$j9T$WKM3K.5JhrHh4mf4zTgYj1$/X2FdS7H6hKNTSfLBXAsQncVCs69d6IH3ZEgNwHELl2",
         "sshAuthorizedKeys": [
           "ssh-ed25519 AAaac3NzaC1lZDI1NTE5AAAAIAfP6CfRonOUPTi6gcKUkBzW0R0r0kR+8KI5SJvU45Xv kaledriina@gmail.com"
         ],
