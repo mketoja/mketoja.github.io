@@ -13,7 +13,7 @@
         "name": "core",
         "passwordHash": "$y$j9T$WKM3K.5JhrHh4mf4zTgYj1$/X2FdS7H6hKNTSfLBXAsQncVCs69d6IH3ZEgNwHELl2",
         "sshAuthorizedKeys": [
-          "ssh-ed25519 AAaac3NzaC1lZDI1NTE5AAAAIAfP6CfRonOUPTi6gcKUkBzW0R0r0kR+8KI5SJvU45Xv kaledriina@gmail.com"
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO5xdRySReoBFdcokGRvDrLFZOIoJ9UmjOzfNLF0g5ho milja@Arabella"
         ],
         "shell": "/bin/bash",
         "uid": 1000
