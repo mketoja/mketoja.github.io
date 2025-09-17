@@ -7,16 +7,16 @@
       {
         "groups": [
           "sudo",
-          "docker",
-          "wheel"
+          "wheel",
+          "adm"
         ],
-        "name": "stephen",
-        "passwordHash": "$y$j9T$7WXKtGjMh9ngYFBppdzrG.$pXa.qv4ninBJ10VVpjxhS1bZcleEe8H5/fg7g0MtnP2",
+        "name": "core",
+        "passwordHash": "$y$j9T$7WXKtGjsMh9ngYFBppdzrG.$pXa.qv4ninBJ10VVpjxhS1bZcleEe8H5/fg7g0MtnP2",
         "sshAuthorizedKeys": [
           "ssh-ed25519 AAaac3NzaC1lZDI1NTE5AAAAIAfP6CfRonOUPTi6gcKUkBzW0R0r0kR+8KI5SJvU45Xv kaledriina@gmail.com"
         ],
         "shell": "/bin/bash",
-        "uid": 816
+        "uid": 1000
       }
     ]
   },
